@@ -42,7 +42,7 @@ function Insurance_CompanyRegistration (address user) public onlyregulatory_auth
 }
 function PharmacyRegistration(address _Pharmacy) public onlyregulatory_authority{
 registeredPharmacy[_Pharmacy] = true;
-emit PatientRegistred (msg.sender, address(_Pharmacy));
+emit PharmacyRegistred (msg.sender, address(_Pharmacy));
 }
 
 function PatientRegisteration (address user) public onlyregulatory_authority{
